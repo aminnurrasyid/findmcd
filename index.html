@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/McDonald's_Logo_WebIcon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find McD</title>
+    <style>
+      /* Webkit-based browsers */
+      ::-webkit-scrollbar {
+        width: 6px; /* Narrower scrollbar */
+      }
+
+      ::-webkit-scrollbar-track {
+        background: transparent; /* Hide track */
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #cccccc; /* Light grey scrollbar */
+        border-radius: 6px; /* Round edges */
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #999999; /* Darker on hover */
+      }
+
+      html, body, #root {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      .leaflet-popup-content {
+        margin: 1px !important;  /* Reduce padding */
+      }
+
+      .custom-icon-shadow {
+        filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1)); /* Simple shadow */
+      }
+
+      .bordered-icon {
+        border: 5px solid lightblue; /* Example border color */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
